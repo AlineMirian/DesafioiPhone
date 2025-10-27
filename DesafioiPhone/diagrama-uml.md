@@ -23,16 +23,23 @@ class NavegadorInternet {
 }
 
 class iPhone {
-    -String modelo
+-String modelo
     -String musicaAtual
     -String paginaAtual
     -boolean tocando
     +iPhone(String modelo)
     +getModelo() String
+    +tocar()
+    +pausar()
+    +selecionarMusica(String)
+    +ligar(String)
+    +atender()
+    +iniciarCorreioVoz()
+    +exibirPagina(String)
+    +adicionarNovaAba()
+    +atualizarPagina()
 }
 
 ReprodutorMusical <|.. iPhone
 AparelhoTelefonico <|.. iPhone
 NavegadorInternet <|.. iPhone
-
-undefined
